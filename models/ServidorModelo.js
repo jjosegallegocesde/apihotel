@@ -33,7 +33,7 @@ class ServidorModelo {
 
         this.app.use('/', rutas)
         this.app.use(cors())
-        this.app.use(allowCrossDomain)
+
 
     }
 
