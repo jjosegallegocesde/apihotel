@@ -32,7 +32,9 @@ class ServidorModelo {
     enrutarPeticiones() {
 
         this.app.use('/', rutas)
-        this.app.use(cors())
+        this.app.use(cors({
+            origin: '*'
+        }))
 
     }
 
