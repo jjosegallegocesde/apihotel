@@ -32,7 +32,6 @@ class ServidorModelo {
     enrutarPeticiones() {
 
         this.app.use('/', rutas)
-        this.app.use(cors())
 
 
     }
@@ -46,6 +45,7 @@ class ServidorModelo {
     //middlewares
     llamarAuxiliares() {
         this.app.use(express.json())
+        this.app.use(cors())
     }
 
 }
