@@ -32,9 +32,8 @@ class ServidorModelo {
     enrutarPeticiones() {
 
         this.app.use('/', rutas)
-        this.app.use(cors({
-            origin: '*'
-        }))
+        this.app.use(cors())
+        this.app.use(allowCrossDomain)
 
     }
 
