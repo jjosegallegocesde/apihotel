@@ -19,7 +19,7 @@ const ReservaModelo = Schema({
         type: Date,
         required: true
     },
-    NumeroPersonas: {
+    numeroPersonas: {
         type: Number,
         required: true
     }

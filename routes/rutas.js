@@ -32,8 +32,8 @@ rutas.put('/hoteles/v1/habitaciones/:id', editarHabitacion)
 rutas.delete('/hoteles/v1/habitaciones/:id', eliminarHabitacion)
 
 rutas.get('/avanzada/v1/jugadores/:id', buscarReserva)
-rutas.get('/avanzada/v1/jugadores', buscarReservas)
-rutas.post('/avanzada/v1/jugadores', registrarReserva)
+rutas.get('/avanzada/v1/reservas', buscarReservas)
+rutas.post('/avanzada/v1/reservas', registrarReserva)
 rutas.put('/avanzada/v1/jugadores/:id', editarReserva)
 rutas.delete('/avanzada/v1/jugadores/:id', eliminarReserva)
 
